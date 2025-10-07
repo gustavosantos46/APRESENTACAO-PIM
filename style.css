@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  background: #d9d9d9;
+  color: #000;
+  display: flex;
+}
+
+.sidebar {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  border-right: 2px solid #949494;
+}
+
+.user-style {
+  font-size: 2rem;
+  background: #cdcdcd;
+  border-radius: 50%;
+  padding: 10px;
+  margin-top: 25px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+}
+
+.user-img {
+  width: 48px;
+  height: 48px;
+}
+
+.container {
+  flex: 1;
+  padding: 20px 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box {
+  position: absolute;
+  right: 30px;
+}
+
+.search-box input {
+  padding: 8px 5px 8px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  font-size: 1rem;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding-bottom: 10px;
+  color: #333;
+}
+
+.tab.active {
+  color: #c62a2a;
+  border-bottom: 2px solid #c62a2a;
+}
+
+.tickets-list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ticket-card {
+  text-decoration: none;
+  color: inherit;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  align-items: center;
+}
+
+.ticket-info p {
+  margin: 3px 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.ticket-status {
+  text-align: right;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 60px;
+}
+
+.open-btn {
+  width: 40px;
+  height: 40px;
+}
