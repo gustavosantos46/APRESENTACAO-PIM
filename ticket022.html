@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ticket #022</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="ticket.css" />
+  </head>
+  <body>
+    <aside class="sidebar">
+      <img src="assets/images/user.png" class="user-style" />
+    </aside>
+
+    <main class="container">
+      <header class="header">
+        <div class="back-btn" onclick="window.location.href='index.html'">
+          <img src="assets/images/arrow-left.png" class="back-btn-img" />
+        </div>
+        <h1>Ticket #022</h1>
+      </header>
+
+      <section class="ticket-details">
+        <p><strong>Setor:</strong> Atendimento digital</p>
+        <p>
+          <strong>Tipo de problema:</strong> Falha em totem de autoatendimento
+        </p>
+        <p><strong>Horário:</strong> 14:35</p>
+        <p><strong>Solicitante:</strong> Mariana – Supervisora de Operações</p>
+        <p>
+          <strong>Prioridade:</strong>
+          <span class="priority medium">Média</span> → Afeta apenas 1 totem em
+          horário normal
+        </p>
+
+        <h3>Descrição do problema:</h3>
+        <p class="description">
+          Um dos totens de autoatendimento está travando na tela inicial,
+          impedindo os clientes de fazer pedidos. O sistema não responde ao
+          toque e precisa ser reiniciado manualmente.
+        </p>
+
+        <div class="ai-suggestion">
+          <p>
+            <strong>Sugestão da IA</strong>
+            <em>
+              - Palavras-chave: "totem", "travando", "tela inicial",
+              "autoatendimento"
+            </em>
+          </p>
+          <p>
+            <strong>Classificação:</strong> Falha isolada em equipamento de
+            atendimento digital
+          </p>
+          <p><strong>Ações sugeridas:</strong></p>
+          <ul>
+            <li>Reiniciar o totem afetado</li>
+            <li>Verificar integridade do software embarcado</li>
+            <li>Checar temperatura e energia do equipamento</li>
+            <li>Executar manutenção preventiva nos demais totens</li>
+          </ul>
+        </div>
+
+        <div class="attachment">
+          <p>
+            <strong>Anexo recebido:</strong>
+            <button class="attachment-btn">
+              Clique para ver
+              <img
+                src="assets/images/attach_file.png"
+                alt="Anexo"
+                class="attachment-img"
+              />
+            </button>
+          </p>
+          <button class="start-btn">INICIAR ATENDIMENTO</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="ticket.js"></script>
+  </body>
+</html>
