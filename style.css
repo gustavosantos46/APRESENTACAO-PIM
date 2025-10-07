@@ -14,7 +14,6 @@ body {
   width: 100px;
   display: flex;
   justify-content: center;
-  border-right: 2px solid #949494;
 }
 
 .user-style {
@@ -40,13 +39,18 @@ body {
 
 .header {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  text-align: left;
+}
+
+.header h1 {
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
 
 .search-box {
-  position: absolute;
-  right: 30px;
+  justify-content: flex-end;
 }
 
 .search-box input {
@@ -58,8 +62,8 @@ body {
 
 .search-icon {
   position: absolute;
-  right: 10px;
-  top: 5px;
+  right: 48px;
+  top: 32px;
   font-size: 1rem;
   width: 20px;
   height: 20px;
@@ -68,7 +72,6 @@ body {
 
 .tabs {
   display: flex;
-  gap: 30px;
   margin-top: 30px;
 }
 
@@ -124,4 +127,378 @@ body {
 .open-btn {
   width: 40px;
   height: 40px;
+}
+
+@media (max-width: 425px) {
+  .sidebar {
+    width: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .user-style {
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 30px;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .user-img {
+    margin-bottom: 10px;
+    width: 24px;
+    height: 24px;
+  }
+
+  .container {
+    flex: 1;
+    padding: 20px 5px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .search-box {
+    justify-content: flex-end;
+  }
+
+  .search-box input {
+    padding: 8px 0px 8px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-top: 14px;
+    width: 83px;
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 39px;
+    font-size: 1rem;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .tabs {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .tab {
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding-bottom: 10px;
+    color: #333;
+  }
+
+  .tab.active {
+    color: #c62a2a;
+    border-bottom: 2px solid #c62a2a;
+  }
+
+  .tickets-list {
+    position: absolute;
+    top: 150px;
+    left: 16px;
+    right: 16px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .ticket-card {
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+    width: 350px;
+  }
+
+  .ticket-info p {
+    margin: 3px 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .ticket-status {
+    text-align: right;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 124px;
+    font-size: 12px;
+  }
+
+  .open-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .sidebar {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid #949494;
+  }
+
+  .user-style {
+    font-size: 2rem;
+    background: #cdcdcd;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 25px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+  }
+
+  .user-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .container {
+    flex: 1;
+    padding: 20px 40px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-box {
+    position: absolute;
+    right: 30px;
+  }
+
+  .search-box input {
+    padding: 8px 5px 8px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 80px;
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 18px;
+    top: 20px;
+    font-size: 1rem;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .tab {
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding-bottom: 10px;
+    color: #333;
+  }
+
+  .tab.active {
+    color: #c62a2a;
+    border-bottom: 2px solid #c62a2a;
+  }
+
+  .tickets-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .ticket-card {
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+  }
+
+  .ticket-info p {
+    margin: 3px 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .ticket-status {
+    text-align: right;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 60px;
+  }
+
+  .open-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* a partir de 768px, muda o layout */
+@media (min-width: 1024px) {
+  .sidebar {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid #949494;
+  }
+
+  .user-style {
+    font-size: 2rem;
+    background: #cdcdcd;
+    border-radius: 50%;
+    padding: 10px;
+    margin-top: 25px;
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+  }
+
+  .user-img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .container {
+    flex: 1;
+    padding: 20px 40px;
+  }
+
+  .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .search-box {
+    position: absolute;
+    right: 30px;
+  }
+
+  .search-box input {
+    padding: 8px 5px 8px 10px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    margin-right: 10px;
+    width: 170px;
+  }
+
+  .search-icon {
+    position: absolute;
+    right: 18px;
+    top: 20px;
+    font-size: 1rem;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .tabs {
+    display: flex;
+    gap: 30px;
+    margin-top: 30px;
+  }
+
+  .tab {
+    background: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    padding-bottom: 10px;
+    color: #333;
+  }
+
+  .tab.active {
+    color: #c62a2a;
+    border-bottom: 2px solid #c62a2a;
+  }
+
+  .tickets-list {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .ticket-card {
+    text-decoration: none;
+    color: inherit;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    align-items: center;
+  }
+
+  .ticket-info p {
+    margin: 3px 0;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  .ticket-status {
+    text-align: right;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 60px;
+  }
+
+  .open-btn {
+    width: 40px;
+    height: 40px;
+  }
 }
