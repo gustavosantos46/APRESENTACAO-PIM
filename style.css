@@ -236,32 +236,47 @@ body {
     align-items: center;
   }
 
-  .color-card {
-    height: 244px;
-    width: 390px;
-    background-color: #c62a2a;
+  .color-card,
+  .color-card-yellow {
+    position: relative;
     border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+
+
+  .color-card .ticket-card,
+  .color-card-yellow .ticket-card {
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
+  }
+
+
+  .span-color,
+  .span-color-yellow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .color-card {
+    background-color: #c62a2a;
   }
 
   .color-card-yellow {
-    height: 244px;
-    width: 390px;
     background-color: #d0d400de;
-    border-radius: 10px;
-  }
-
-  .span-color-yellow {
-    display: flex;
-    font-size: 18px;
-    color: black;
-    justify-content: center;
   }
 
   .span-color {
-    display: flex;
-    font-size: 18px;
     color: white;
-    justify-content: center;
+  }
+
+  .span-color-yellow {
+    color: black;
   }
 
   .ticket-info p {
