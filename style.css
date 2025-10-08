@@ -219,10 +219,9 @@ body {
     top: 150px;
     left: 16px;
     right: 16px;
-    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
   }
 
   .ticket-card {
@@ -235,7 +234,34 @@ body {
     justify-content: space-between;
     padding: 15px 20px;
     align-items: center;
-    width: 350px;
+  }
+
+  .color-card {
+    height: 244px;
+    width: 390px;
+    background-color: #c62a2a;
+    border-radius: 10px;
+  }
+
+  .color-card-yellow {
+    height: 244px;
+    width: 390px;
+    background-color: #d0d400de;
+    border-radius: 10px;
+  }
+
+  .span-color-yellow {
+    display: flex;
+    font-size: 18px;
+    color: black;
+    justify-content: center;
+  }
+
+  .span-color {
+    display: flex;
+    font-size: 18px;
+    color: white;
+    justify-content: center;
   }
 
   .ticket-info p {
@@ -245,13 +271,7 @@ body {
   }
 
   .ticket-status {
-    text-align: right;
-    font-weight: 600;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 124px;
-    font-size: 12px;
+    display: none;
   }
 
   .open-btn {
@@ -358,6 +378,14 @@ body {
     justify-content: space-between;
     padding: 15px 20px;
     align-items: center;
+  }
+
+  .span-color-yellow {
+    display: none;
+  }
+
+  .span-color {
+    display: none;
   }
 
   .ticket-info p {
