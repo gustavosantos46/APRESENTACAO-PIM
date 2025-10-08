@@ -20,13 +20,14 @@ document.addEventListener("DOMContentLoaded", () => {
       const selected = tab.dataset.tab;
 
       cards.forEach((card) => {
-        card.style.display =
+        const parent = card.parentElement;
+        const show =
           selected === "todos" ||
           (selected === "andamento" && card.dataset.status === "andamento") ||
           (selected === "abertos" && card.dataset.status === "aguardando") ||
-          (selected === "encerrados" && card.dataset.status === "encerrado")
-            ? "flex"
-            : "none";
+          (selected === "encerrados" && card.dataset.status === "encerrado");
+
+        parent.style.display = show ? "block" : "none";
       });
     });
   });
